@@ -1,0 +1,18 @@
+public class Solution {
+    public static void main(String[] args) throws Exception {
+        SimpleObject<String> stringObject = new StringObject<Object>();
+    }
+
+    interface SimpleObject<T> {
+        SimpleObject<T> getInstance();
+    }
+    
+    public static class StringObject <String>  implements SimpleObject {
+        
+        @Override
+        public SimpleObject <String>  getInstance(){
+            return null;
+        }
+    }
+
+}
